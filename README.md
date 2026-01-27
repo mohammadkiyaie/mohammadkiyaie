@@ -1,5 +1,5 @@
 <h1 align="left">Hi 👋, I'm mohammad</h1>
-<h3 align="left">An Frontend Developer currently mastering Frontend</h3>
+<h3 align="left">An Frontend Developer mastering Frontend</h3>
 
 currently developing Meroviee, an innovative startup focused on video editing<br>
 I’m leveling up my Frontend skills by integrating TypeScript into our workflow 
