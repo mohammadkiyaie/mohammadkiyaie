@@ -12,7 +12,4 @@ I’m leveling up my Frontend skills by integrating TypeScript into our workflow
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/mohammadh_ki) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:mohammadh.kiayie@gmail.com) 
 
 
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=mohammadhossienkiyaie&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=mohammadhossienkiyaie&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=mohammadhossienkiyaie&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
