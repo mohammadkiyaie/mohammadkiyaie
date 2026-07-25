@@ -7,68 +7,71 @@
 </head>
 <body>
     <header class="header">
+        <div class="header__logo">M.kiyaie</div>
 
-    <div class="logo">M.kiyaie</div>
-
-    <nav class="header-nav">
-        <ul class="header-nav-ul">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skill">Skill</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <button class="btn-hire">Hire Me</button>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#home" class="header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="#about" class="header__nav-link">About</a></li>
+                <li class="header__nav-item"><a href="#skill" class="header__nav-link">Skill</a></li>
+                <li class="header__nav-item"><a href="#projects" class="header__nav-link">Projects</a></li>
+                <li class="header__nav-item"><a href="#contact" class="header__nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="header__btn-hire">Hire Me</button>
     </header>
-    <section class="hero-section">
 
-        <div class="hero-info">
-                <p class="purple-info">IM A WEB DEVELOPER</p>
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Mohammad</span></h1>
+    <section class="hero">
+        <div class="hero__info">
+            <span class="hero__badge">IM A WEB DEVELOPER</span>
+            
+            <div class="hero__content">
+                <h1 class="hero__title">Hi, I'm <span class="hero__highlight">Mohammad</span></h1>
+                <p class="hero__description">I build things for the web.</p>
                 
-                <p>I build things for the web.</p>
-                
-                <div class="hero-buttons">
-                    <button class="btn-primary">View My Work</button>
+                <div class="hero__actions">
+                    <button class="hero__btn hero__btn--primary">View My Work</button>
                 </div>
             </div>
-            <div>
+
+            <div class="hero__tech-label">
                 <p>TECHNOLOGIES I WORK WITH</p>
             </div>
-            <div class="tech-icons">
-                <img class="icons" src="./source/picture/js-icon.svg" alt="">
-                <img class="icons" src="./source/picture/react-icon.svg" alt="">
-                <img class="icons" src="./source/picture/typescript-icon.svg" alt="">
-                <img class="icons" src="./source/picture/html-icon.svg" alt="">
-                <img class="icons" src="./source/picture/css3-icon.svg" alt="">
-                <img class="icons" src="./source/picture/wordpress-icon.svg" alt="">
-                <img class="icons" src="./source/picture/git-icon.svg" alt="">
+
+            <div class="hero__tech-icons">
+                <img class="hero__icon" src="./source/picture/js-icon.svg" alt="JavaScript">
+                <img class="hero__icon" src="./source/picture/react-icon.svg" alt="React">
+                <img class="hero__icon" src="./source/picture/typescript-icon.svg" alt="TypeScript">
+                <img class="hero__icon" src="./source/picture/html-icon.svg" alt="HTML">
+                <img class="hero__icon" src="./source/picture/css3-icon.svg" alt="CSS">
+                <img class="hero__icon" src="./source/picture/wordpress-icon.svg" alt="Wordpress">
+                <img class="hero__icon" src="./source/picture/git-icon.svg" alt="Git">
             </div>
         </div>
-        <div class="hero-pic-div">
-            <div class="portfolio-container">
-                <img class="portfolio-pic" src="./source/picture/portfolio.webp" alt="">
+
+        <div class="hero__media">
+            <div class="hero__profile-container">
+                <img class="hero__profile-pic" src="./source/picture/portfolio.webp" alt="Mohammad">
             </div>
-            <div class="code-api-box">
-                <div class="code-header">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                    <span class="file-name">dev.json</span>
+
+            <div class="code-box">
+                <div class="code-box__header">
+                    <span class="code-box__dot code-box__dot--red"></span>
+                    <span class="code-box__dot code-box__dot--yellow"></span>
+                    <span class="code-box__dot code-box__dot--green"></span>
+                    <span class="code-box__file-name">script.js</span>
                 </div>
-                <div class="code-text-div">
-                    <p>Const Developer = <span>{</span></p>
-                    <p>name : Mohammad</p>
-                    <p>skils : ["HTML" , "CSS" , </p>
-                    <p>"JavaScript" , "React" , </p>
-                    <p>passion : "build cool stuff</p>
-                    <p>status : "Available"</p>
+                <div class="code-box__content">
+                    <p><span class="code-box__keyword">const</span> <span class="code-box__variable">developer</span> = <span class="code-box__brace">{</span></p>
+                    <p>&nbsp;&nbsp;<span class="code-box__key">name</span>: <span class="code-box__string">"Mohammad"</span>,</p>
+                    <p>&nbsp;&nbsp;<span class="code-box__key">skills</span>: [<span class="code-box__string">"HTML"</span>, <span class="code-box__string">"CSS"</span>,</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-box__string">"JavaScript"</span>, <span class="code-box__string">"React"</span>],</p>
+                    <p>&nbsp;&nbsp;<span class="code-box__key">passion</span>: <span class="code-box__string">"build cool stuff"</span>,</p>
+                    <p>&nbsp;&nbsp;<span class="code-box__key">status</span>: <span class="code-box__string">"Available"</span></p>
+                    <p><span class="code-box__brace">};</span></p>
                 </div>
             </div>
         </div>
     </section>
-
 </body>
 </html>
