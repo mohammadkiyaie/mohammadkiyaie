@@ -280,8 +280,7 @@ body {
     }
     .header{
        flex-direction: row;
-        min-width: 90%;
-       margin: 10px auto;
+       margin: 15px auto;
     }
     .hero{
         flex-direction: column;
