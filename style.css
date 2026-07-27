@@ -107,7 +107,7 @@ body {
     gap: 25px;
 }
 
-.hero__badge {
+.hero__badge  , .about__badge {
     background-color: #441e68b9;
     width: fit-content;
     font-size: 0.7rem;
@@ -272,6 +272,172 @@ body {
     border-radius: 2px;
     transition: 0.3s ease;
 }
+.about__me{
+    max-width: 1400px;
+    width: 90%;
+    margin: 1.5rem auto;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 20px;
+}
+.about__me-info{
+    display: grid;
+    gap: 15px;
+    padding-left: 4rem;
+    /* border: 1px solid green; */
+}
+
+.info__head__text{
+    font-weight: 700;
+    font-size: 2rem;
+    width: 80%;
+    line-height: 1.3;
+}
+.info__text{
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.4;
+    width: 60%;
+    color: #b1b1b1;
+}
+.aboutme__div{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap : 0.5rem ;
+    padding-top: 1rem;
+    /* border: 1px solid red; */
+    
+}
+
+.aboutme__icon{
+    width: 50px;
+}
+.aboutme_aligncontent{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    justify-content: flex-start;
+    /* border: 1px solid white; */
+}
+.aboutme__icon__textbox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: center;
+}
+.skill {
+    max-width: 1400px;
+    width: 90%;
+    margin: 1.5rem auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skill__info_box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.skill__badge {
+    background-color: #441e68b9;
+    font-size: 0.7rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    color: #818cf8;
+    letter-spacing: 1px;
+}
+
+.skill__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* ساختار گرید ۳ ستونه برای دسکتاپ */
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ۳ ستون مساوی */
+    gap: 20px;
+}
+
+/* کارت داخلی هر مهارت (فلکس‌باکس برای چیدمان آیکون و محتوا) */
+.skill__card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(22, 24, 33, 0.65);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1.25rem;
+    border-radius: 12px;
+}
+
+.skill__icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.skill__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+}
+
+.skill__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill__name {
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.skill__percent {
+    color: #94a3b8;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.skill__bar_progress {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    border-radius: 999px;
+}
+
+/* ریسپانسیو برای تبلت و موبایل */
+@media screen and (max-width: 1024px) {
+    .skills__grid {
+        grid-template-columns: repeat(2, 1fr); /* در تبلت ۲ ستونه شود */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skill {
+        padding: 0 1rem;
+    }
+    .skills__grid {
+        grid-template-columns: 1fr; /* در موبایل ۱ ستونه شود */
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     body{
@@ -288,6 +454,7 @@ body {
     }
     .hero{
         flex-direction: column;
+        height: auto;
         margin: 0px;
         margin: auto 1.2rem;
         gap: 20px;
@@ -354,6 +521,39 @@ body {
     .code-box{
         display: none;
     }
+    .about__me {
+        grid-template-columns: 1fr; 
+        width: 100%;
+        padding: 0 1rem;            
+        box-sizing: border-box;
+        margin-top: 3rem;           
+        gap: 30px;
+    }
+    .about__me-info {
+        padding-left: 0px;         
+        width: 100%;
+    }
+    .info__head__text {
+        width: 100%;                
+        font-size: 1.75rem;        
+    }
+    .info__text {
+        width: 100%;               
+    }
+    .aboutme__div {
+        width: 100%;
+    }
+    .aboutme__icon{
+        width: 40px;
+    }
+    .aboutme__info_num{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .aboutme__info_text{
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     body{
@@ -374,6 +574,7 @@ body {
         margin: 0px;
         margin: auto 1.2rem;
         gap: 20px;
+        height: auto;
     }
     .hero__info{
         padding-left: 0px;
@@ -394,5 +595,39 @@ body {
         margin: 0px;
         padding: 0px;
         justify-content: center;
+    }
+    .about__me {
+        grid-template-columns: repeat(2, 1fr); 
+        width: 100%;
+        padding: 0 1rem;            
+        box-sizing: border-box;
+        margin-top: 3rem;           
+        gap: 30px;
+    }
+    .about__me-info {
+        padding-left: 0px;         
+        width: 100%;
+    }
+    .info__head__text {
+        width: 100%;                
+        font-size: 1.75rem;        
+    }
+    .info__text {
+        width: 80%;               
+    }
+    .aboutme__div {
+        padding-top: 0.5rem;
+        width: 100%;
+    }
+    .aboutme__icon{
+        width: 50px;
+    }
+    .aboutme__info_num{
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .aboutme__info_text{
+        font-size: 0.8rem;
+        font-weight: 400;
     }
 }
