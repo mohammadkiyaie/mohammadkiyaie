@@ -421,20 +421,155 @@ body {
     background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
     border-radius: 999px;
 }
+.projects {
+    max-width: 1400px;
+    width: 90%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
-/* ریسپانسیو برای تبلت و موبایل */
+.projects__header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.projects__badge {
+    background-color: #441e68b9;
+    font-size: 0.7rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    color: #818cf8;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.projects__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* کانتینر گرید که به صورت پیش‌فرض در دسکتاپ ۳ ستونه است */
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* استایل هر کارت پروژه */
+.projects__card {
+    background: rgba(22, 24, 33, 0.65);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.projects__card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(129, 140, 248, 0.3);
+}
+
+.projects__img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background: #0f172a;
+    overflow: hidden;
+}
+
+.projects__number {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 4px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.projects__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects__content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    gap: 1.5rem;
+}
+
+.projects__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.projects__name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+}
+
+.projects__desc {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+.projects__link {
+    color: #818cf8;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    align-self: flex-end;
+    transition: color 0.2s ease;
+}
+
+.projects__link:hover {
+    color: #c084fc;
+}
+
 @media screen and (max-width: 1024px) {
-    .skills__grid {
-        grid-template-columns: repeat(2, 1fr); /* در تبلت ۲ ستونه شود */
+    .projects__grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .skill {
-        padding: 0 1rem;
+    .projects__header{
+        gap: 1rem;
     }
-    .skills__grid {
-        grid-template-columns: 1fr; /* در موبایل ۱ ستونه شود */
+    .projects__title{
+        font-size: 1.8rem;
+    }
+    .projects__grid {
+        grid-template-columns: 1fr;
+    }
+    .projects {
+        width: 95%;
+        padding: 0 0.5rem;
+    }
+    .projects__img{
+        width: auto;
+        object-fit: cover;
     }
 }
 
@@ -554,6 +689,17 @@ body {
         font-size: 0.7rem;
         font-weight: 400;
     }
+    /* skill section */
+    .skill {
+        padding: 0 1rem;
+        margin-top: 2rem;
+    }
+    .skills__grid {
+        grid-template-columns: 1fr; 
+    }
+    .skill__title{
+        font-size: 1.8rem;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     body{
@@ -629,5 +775,9 @@ body {
     .aboutme__info_text{
         font-size: 0.8rem;
         font-weight: 400;
+    }
+/* skill section */
+    .skills__grid {
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
